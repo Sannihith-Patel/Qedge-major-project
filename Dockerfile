@@ -4,8 +4,8 @@ FROM nginx:alpine
 RUN rm -rf /usr/share/nginx/html/*
 
 # Copy static files from a remote URL
-COPY templatemo_511_journey .  /usr/share/nginx/html/      #the source code is avil from git repo its
-                                                                                        #scm also in my git repo it’s the path .
+COPY templatemo_511_journey .  /usr/share/nginx/html/   
+                                                                          
 EXPOSE 80
 
 CMD ["nginx", "-g", "daemon off;"]
