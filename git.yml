@@ -1,0 +1,10 @@
+--- #install the git into nodes
+- name: Install Git
+  hosts: all
+  become: yes
+  tasks:
+   - name: Install Git
+     yum:
+       name: git
+       state: latest
+
